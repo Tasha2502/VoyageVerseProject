@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="/currConvert.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">Calculate the total just in seconds!</div>
+
+    </nav>
+    <div class="container">
+        <h2>Choose a currency to convert</h2>
+        <form action="/action.php" method="get">
+            <label for="quantity">Choose a quantity:</label>
+            <input type="number" name="quantity" min="1" max="10">
+            <label for="currency">Enter a currency in USD:</label>
+            <select name="currency">
+                <!-- <option value="INR">Indian Rupee</option> -->
+                <option value="USD">US Dollar</option>
+                <!-- <option value="EUR">Euro</option> -->
+            </select> 
+           <button type="submit" class="btn">Submit</button>
+           <div class="output">
+            <h1>Here is your converted values in different currencies</h1>
+            <table>
+                
+                <thead>
+                    <tr>
+                        <th>Currency Code</th>
+                        <th>1USD =</th>
+                        <th>Value</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+            
+           </div>
+        </form>
+
+
+    </div>
+    <footer>
+        Copyright &copy: All rights reserved
+    </footer>
+    <script src="/currConvert.js"></script>
+</body>
+</html>

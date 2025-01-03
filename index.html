@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoyageVerse(Travel Wish=list Platform)</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- font awesome cdn link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+    <!-- google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@100..900&family=Poppins&family=Roboto&family=Tajawal:wght@200;300;400;500;700;800;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- css file link -->
+    <link rel="stylesheet" href="/style.css">
+    
+
+</head>
+
+<body>
+    <!-- video pop up -->
+    <div id="videoSlideshow" class="slideshow-container">
+    
+        <button id="closeSlideshow" class="close-btn" aria-label="Close Slideshow">✕</button>
+        <video id="slideshowVideo" preload="auto" autoplay loop muted>
+          <source src="/bg-pop-up.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    <!-- header section starts -->
+    <header>
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <a href="#" class="logo"><span>V</span>oyage Verse</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#book">Book</a>
+            <a href="#packages">Packages</a>
+            <a href="#services">Services</a>
+            <a href="#review">Review</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div class="icons">
+         <a href="/unplash&cloud.html"><i class="fas fa-search" src="/imagesearch.html" id="search-btn"></i></a>
+            <a href="/auth.html"><i class="fas fa-user" id="login-btn"></i></a>
+        </div>
+
+        <form action="" class="search-bar-container" id="searchForm">
+            <input type="search" id="search-bar" placeholder="search here...">
+            <label for="search-bar" class="fas fa-search"></label>
+        </form>
+        <div id="unsplash-container"></div>
+    </header>
+    <!-- header section ends -->
+     <!-- login form container -->
+      <div class="login-form-container">
+        <a href="/login.html"><i class="fa-solid fa-xmark" id="form-close"></i></a>
+        
+        
+      </div>
+<!-- section home starts -->
+ <section class="home" id="home">
+    <div class="content">
+        <h3>"Explore the world."</h3>
+        <p>“Where dreams of distant places turn into plans, and every journey begins with a single wish.”
+        </p>
+        <a href="/explore.html" class="btn">Explore more</a>
+    </div>
+    
+
+
+    <div class="controls">
+        <span class="vid-btn active" data-src="images/video1.mp4"></span>
+        <span class="vid-btn" data-src="/images/video2.mp4"></span>
+        <span class="vid-btn" data-src="/images/video3.mp4"></span>
+        <span class="vid-btn" data-src="/images/video4.mp4"></span>
+        <span class="vid-btn" data-src="/images/video5.mp4"></span>
+    </div>
+    <div class="video-container">
+        <video src="/images/bg.mp4" id="video-slider" loop autoplay muted></video>
+    </div>
+</section>
+<!-- home section ends -->
+
+<!-- book section starts -->
+ <section class="book" id="book">
+    <h1 class="heading">
+        <span>b</span>
+        <span>o</span>
+        <span>o</span>
+        <span>k</span>
+        <span class="space"></span>
+        <span>n</span>
+        <span>o</span>
+        <span>w</span>
+    </h1>
+
+
+    <div class="row">
+        <div class="image">
+            <img src="/images/bagtaking.jpg" alt="">
+        </div>
+        <form action="">
+        <div class="inputBox">
+            <h3>Where to go?</h3>
+            <input type="text" placeholder="place name">
+        </div>
+        <div class="inputBox">
+            <h3>How many guests?</h3>
+            <input type="number" placeholder="number of guests">
+        </div>
+        <div class="inputBox">
+            <h3>Arrival</h3>
+            <input type="date">
+        </div>
+        <div class="inputBox">
+            <h3>Departure</h3>
+            <input type="date">
+        </div>
+        <input type="submit" class="btn" value="book now">
+    </form>
+    </div>
+
+ </section>
+ <!-- book section ends -->
+
+<!-- weather insights section starts -->
+<section class="weather" id="weather">
+
+   
+    <h1 class="heading">
+     <span>w</span>
+     <span>e</span>
+     <span>a</span>
+     <span>t</span>
+     <span>h</span>
+     <span>e</span>
+     <span>r</span>
+     <span class="space"></span>
+     <span class="space"></span>
+     <span class="space"></span>
+
+     <span>i</span>
+     <span>n</span>
+     <span>s</span>
+     <span>i</span>
+     <span>g</span>
+     <span>h</span>
+     <span>t</span>
+     <span>s</span>
+ </h1>
+ <video class="bg-video" src="/images/istockphoto-1322031944-640_adpp_is.mp4" autoplay loop muted>
+</video>
+ <p>Know before you go! Our weather feature gives you real-time weather updates for any location around the world, ensuring you’re always prepared for what’s ahead. Plan your packing, choose the best activities, and be ready for any forecast—rain, snow, or shine!</p>
+ <h2>Check the weather of your favourite destination here!</h2>
+
+ <a href="/weather.html"><button class="check-weather-btn">Check Weather</button></a>
+</section>
+
+
+
+
+<section class="language" id="language">
+
+   
+    <h1 class="heading">
+     <span>l</span>
+     <span>a</span>
+     <span>n</span>
+     <span>g</span>
+     <span>u</span>
+     <span>a</span>
+     <span>g</span>
+     <span>e</span>
+     <span class="space"></span>
+     <span>c</span>
+     <span>h</span>
+     <span>e</span>
+     <span>a</span>
+     <span>t</span>
+     <span>s</span>
+     <span>h</span>
+     <span>e</span>
+     <span>e</span>
+     <span>t</span>
+ </h1>
+ <video class="bg-video" src="/Language.mp4" autoplay loop muted>
+</video>
+ <p>Break the language barrier! With our Language Cheat Sheet, you’ll have essential phrases at your fingertips. From greetings to local expressions, communicate confidently no matter where your travels take you.</p>
+ <h2>Wanna translate anything</h2>
+
+ <a href="/translate.html"><button class="lang-btn">Click Here</button></a>
+</section>
+
+<section class="currency">
+    <h1 class="heading">
+        <span>c</span>
+        <span>u</span>
+        <span>r</span>
+        <span>r</span>
+        <span>e</span>
+        <span>n</span>
+        <span>c</span>
+        <span>y</span>
+        <span class="space"></span>
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>v</span>
+        <span>e</span>
+        <span>r</span>
+        <span>t</span>
+        <span>e</span>
+        <span>r</span>
+    </h1>
+
+
+
+
+
+<video class="bg-video" src="/images/currency.mp4" autoplay loop muted>
+</video>
+<p>Keep your finances in check with our real-time Currency Converter. Whether you’re heading to a new country or exploring a local market, know the value of your money in the local currency and avoid financial surprises. Stay informed and make confident financial decisions while traveling.</p>
+<h2>Convert your total here.</h2>
+<a href="/currConvert.html"><button class="curr-btn">Convert Currency</button></a>
+
+
+</section>
+
+
+
+  <!-- packages section starts -->
+   <section class="packages" id="packages">
+
+   
+   <h1 class="heading">
+    <span>p</span>
+    <span>a</span>
+    <span>c</span>
+    <span>k</span>
+    <span>a</span>
+    <span>g</span>
+    <span>e</span>
+    <span>s</span>
+</h1>
+<div class="box-container">
+    <div class="box">
+        <img src="/images/bangalore.png" alt="">
+        <div class="content">
+            <h3><a href="https://maps.app.goo.gl/WTvS4EcvgTMULCQv7"><i class="fas fa-map-marker-alt"></i>bangalore</a></h3>
+            <p>Bangalore, the Silicon Valley of India, is a vibrant city blending technology, culture, and greenery. Known for its pleasant weather, iconic gardens, bustling markets, and thriving food scene, it’s a hub for innovation and a traveler’s delight.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> $90.00 <span>$150.00</span></div>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="/images/StaueOfLiberty.png" alt="">
+        <div class="content">
+            <h3><a href="https://maps.app.goo.gl/esAXZX9yeYaL9qGr7"><i class="fas fa-map-marker-alt"></i>New York</a></h3>
+            <p>New York City, the city that never sleeps, dazzles with iconic landmarks like Times Square, Central Park, and the Statue of Liberty. A cultural melting pot, it offers world-class museums, Broadway shows, diverse cuisine, and unmatched urban energy.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> $190.00 <span>$220.00</span></div>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="/images/Hawaii.png" alt="">
+        <div class="content">
+            <h3><a href="https://maps.app.goo.gl/PSNbahkxA8WwNKfD7"><i class="fas fa-map-marker-alt"></i>Hawaii</a></h3>
+            <p>Hawaii, a tropical paradise, enchants with its stunning beaches, lush landscapes, and vibrant culture. Explore volcanoes, waterfalls, and coral reefs, or unwind with traditional luaus and hula dances. Perfect for adventure, relaxation, and unforgettable memories under the sun.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> $100.00 <span>$200.00</span></div>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="/images/Thailand.png" alt="">
+        <div class="content">
+            <h3><a href="https://maps.app.goo.gl/UcKeukCUKRtTcXjR8"><i class="fas fa-map-marker-alt"></i>Thailand</a></h3>
+            <p>Thailand, the Land of Smiles, captivates with its golden temples, bustling markets, and serene beaches. Experience vibrant nightlife, explore lush jungles, and savor flavorful street food. From Bangkok to Phuket, it’s a destination blending culture, adventure, and relaxation.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> $90.00 <span>$120.00</span></div>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="/images/Switzerland.png" alt="">
+        <div class="content">
+            <h3><a href="https://maps.app.goo.gl/8T6gngNqNSeKvM4B8"><i class="fas fa-map-marker-alt"></i>Switzerland</a></h3>
+            <p>Switzerland, a paradise of Alpine beauty, enchants with its snow-capped peaks, crystal-clear lakes, and charming villages. Explore Lucerne, Geneva, or Interlaken, savor Swiss chocolate and cheese, and enjoy scenic train rides. It’s a haven for peace and adventure.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> $180.00 <span>$300.00</span></div>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </div>
+    <div class="box">
+        <img src="/images/Italy.png" alt="">
+        <div class="content">
+            <h3><a href="https://maps.app.goo.gl/obG3AaYPuFSs4Wpe6"><i class="fas fa-map-marker-alt"></i>Italy</a></h3>
+            <p>Italy, a treasure trove of history, art, and gastronomy, captivates with landmarks like the Colosseum, Venice’s canals, and Florence’s masterpieces. Indulge in authentic pizza, pasta, and gelato while exploring picturesque Tuscan landscapes and the Amalfi Coast’s breathtaking beauty.</p>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <div class="price"> $200.00 <span>$300.00</span></div>
+            <a href="#" class="btn">book now</a>
+        </div>
+    </div>
+</div>
+</section>
+<!-- packages section ends -->
+ <!-- services section starts -->
+  <section class="services" id="services">
+    <h1 class="heading">
+        <span>s</span>
+        <span>e</span>
+        <span>r</span>
+        <span>v</span>
+        <span>i</span>
+        <span>c</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <a href="https://www.booking.com/index.en-gb.html?label=gen173nr-1BCAEoggI46AdIM1gEaGyIAQGYAQm4AQfIAQzYAQHoAQGIAgGoAgO4AqjbirsGwAIB0gIkZGY0OWU0OTUtMmE3MS00N2ZjLWFmYmQtOTg3ZDM4OGJlMWE42AIF4AIB&sid=47e75677297649c95babb27ba72cff12&keep_landing=1&sb_price_type=total&"><i class="fas fa-hotel"></i></a>
+            <h3>affordable hotel</h3>
+            <p>Affordable hotels aren’t just places to sleep—they’re gateways to memorable experiences, proving that luxury doesn’t always come with a luxury price tag. It’s about discovering more, spending wisely, and embracing every moment of your journey.🌟</p>
+        </div>
+        <div class="box">
+            <a href="https://www.ubereats.com/?srsltid=AfmBOoq_XGBfrYvsSHEfearJuvrKLa-Dli-uLcZW-Ut_p033dKgHhwYG"><i class="fas fa-utensils"></a></i>
+            <h3>food and drinks</h3>
+            <p>Indulge in a delightful array of food and drink, offering everything from local delicacies to international favorites. Savor fresh, flavorful meals paired with refreshing beverages, ensuring every bite and sip enhances your travel experience with taste and comfort.</p>
+        </div> 
+        <div class="box">
+            <a href="/safety.html"><i class="fas fa-bullhorn"></i></a>
+            <h3>safety guide</h3>
+            <p>Ensure a safe and enjoyable trip by following basic safety guidelines. Always stay aware of your surroundings, keep your belongings secure, follow local laws, and respect cultural norms. Prioritize health by staying hydrated and prepared for any emergencies during your travels.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-globe-asia"></i>
+            <h3>around the world</h3>
+            <p>Explore the world’s diverse cultures, landscapes, and experiences. From bustling cities to tranquil beaches, each destination offers unique adventures. Embrace the beauty of new horizons, immerse yourself in different traditions, and create memories that will last a lifetime.</p>
+        </div>
+        <div class="box">
+            <a href="https://www.makemytrip.com/"><i class="fas fa-plane"></i></a>
+            <h3>fastest travel</h3>
+            <p>Experience the thrill of the fastest travel options, from high-speed trains to supersonic flights. Reach your destination in record time while enjoying comfort and efficiency. Embrace the future of transportation and make your journey quicker, smoother, and more exciting.</p>
+        </div>
+        <div class="box">
+            <i class="fas fa-hiking"></i>
+            <h3>experiences</h3>
+            <p>Travel brings unparalleled experiences that enrich your life. Whether it’s conquering towering peaks, wandering through ancient cities, or connecting with locals, each moment offers a chance to learn, grow, and create unforgettable memories that shape your world view.</p>
+        </div>
+
+    </div>
+</section>
+<!-- services section ends -->
+ <!-- gallery section starts -->
+  <section class="gallery" id="gallery">
+    <h1 class="heading">
+        <span>g</span>
+        <span>a</span>
+        <span>l</span>
+        <span>l</span>
+        <span>e</span>
+        <span>r</span>
+        <span>y</span>
+    </h1>
+    <div class="box-container">
+        <div class="box">
+            <img src="/images/image.png" alt="">
+            <div class="content">
+                <h3>Water Boating</h3>
+                <p>Escape the chaos of everyday life and immerse yourself in the tranquil embrace of water boating. Whether you’re gliding through a serene lake, paddling along a winding river, or exploring hidden coastal coves, water boating offers a unique connection to nature and inner peace.
+                </p>
+                <a href="#" class="btn">See More
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/image copy.png" alt="">
+            <div class="content">
+                <h3>Discover Yourself</h3>
+                <p>Discover the World, Discover Yourself
+                    Traveling alone isn’t just about exploring new destinations—it’s about embarking on a journey of self-discovery. Solo travel gives you the freedom to create your own path, follow your heart, and experience the world on your own terms.</p>
+                <a href="#" class="btn">See More
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/image copy 2.png" alt="">
+            <div class="content">
+                <h3>Trip with family</h3>
+                <p>A family trip isn’t just a vacation—it’s a chance to deepen connections and create lifelong memories. Whether it’s a road trip to the countryside or an international adventure, traveling together brings the family closer.
+                    </p>
+                <a href="#" class="btn">See More
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/image copy 3.png" alt="">
+            <div class="content">
+                <h3>Trip with Friends</h3>
+                <p>Traveling with friends isn’t just about exploring destinations—it’s about creating moments that strengthen your bond, teach you new things about each other, and fill your heart with gratitude for the amazing people in your life.
+
+                    Whether it’s a road trip to the mountains, backpacking across Europe, or just a weekend getaway, a trip with friends is always worth the journey. So grab your bags, call your crew, and set off on an adventure that promises to be nothing short of legendary. 🌍✨
+                </p>
+                <a href="#" class="btn">See More
+                </a>
+            </div>
+        </div>
+        <div class="box">
+            <img src="/images/image copy 4.png" alt="">
+            <div class="content">
+                <h3>River Rafting</h3>
+                <p>River rafting is more than just a water sport—it’s an exhilarating journey that tests your courage, teamwork, and spirit of adventure. With the sound of rushing water and the thrill of navigating unpredictable rapids, it’s an experience that will leave you breathless and craving for more.
+                </p>
+                <a href="#" class="btn">See More
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- gallery section ends -->
+ <!-- review section starts -->
+  <section class="review" id="review">
+    <h1 class="heading">
+        <span>r</span>
+        <span>e</span>
+        <span>v</span>
+        <span>i</span>
+        <span>e</span>
+        <span>w</span>
+        <a href="/uploaded.html"><h1><span>click for more</span></h1></a>
+    </h1>
+
+    <div class="swiper-container review-slider">
+        <div class="swiper-wrapper">
+            
+            <div class="swiper-slide">
+            
+                <div class="box">
+                    <img src="/images/Justin.png" alt="">
+                    <h3>Justin Bieber</h3>
+                    <p>“Traveling has always been a huge part of my life, and finding the perfect travel wishlist platform has made my journeys even more memorable. I’ve been using this platform to plan and share my favorite travel spots and experiences, and it’s honestly the best tool for wanderlust enthusiasts like me. The ability to create detailed wishlists with photos, reviews, and personal notes makes it so easy to keep track of places I want to visit next. The social features are awesome too – connecting with friends who share my passion for travel and seeing their wishlist recommendations is inspiring. If you love traveling and want to keep your travel dreams organized and shareable, this is the platform to use!”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/images/Shawn.png" alt="">
+                    <h3>Shawn Mendes</h3>
+                    <p>“Traveling is one of my greatest passions, and this travel wishlist platform has made it easier than ever to explore and plan my dream trips. Whether it’s discovering new places, planning routes, or sharing my experiences with friends, this platform has everything I need to make my travel dreams come true. The ability to create wishlists, upload photos, and read reviews from other travelers makes it so convenient to keep track of my favorite spots around the world. It’s also a great way to get inspired by others and discover hidden gems I might not have found otherwise. If you’re as passionate about travel as I am, this platform is a must-have!”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/images/Modi.png" alt="">
+                    <h3>Narendra Modi</h3>
+                    <p>“Traveling has the power to broaden horizons, enrich experiences, and connect people across cultures. In today’s digital age, platforms like this travel wishlist make it easier than ever to plan, share, and explore the world’s wonders. This platform’s features—from organizing trips to discovering new destinations—encourage a deeper appreciation for travel. It’s an excellent tool for the modern traveler, blending convenience with inspiration. By connecting with others through shared itineraries, photos, and reviews, it helps create a global community of explorers. For those who love to travel and dream of new adventures, this platform is a fantastic resource.”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/images/Murthy.png" alt="">
+                    <h3>Sudha Murthy</h3>
+                    <p>“Traveling has always been a wonderful way to learn about different cultures, history, and people. This travel wishlist platform makes planning my journeys a delightful and organized experience. It’s easy to use and provides a comprehensive way to explore new places, keep track of my travel dreams, and connect with fellow travelers. The ability to share my experiences through photos and reviews is fantastic—allowing others to benefit from my journeys and discoveries. It’s a platform that truly helps travelers make the most of their adventures and promotes a deeper understanding of our world. I highly recommend it to anyone with a passion for travel and exploration.”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/images/Sundar.png" alt="">
+                    <h3>Sundar Pichai</h3>
+                    <p>“Traveling is not just about seeing new places; it’s about exploring new cultures, understanding different perspectives, and broadening our horizons. This travel wishlist platform is a game-changer for anyone who loves to travel and wants to make the most of their adventures. The use of technology to plan, organize, and share travel experiences is seamless and intuitive. With features like creating detailed wishlists, uploading photos, and connecting with other travelers, it turns travel planning into an exciting and collaborative journey. It’s a powerful tool that not only helps you discover new destinations but also connect with a global community of explorers. I highly recommend this platform to anyone who wants to make their travel dreams come true.”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-slide">
+                <div class="box">
+                    <img src="/images/Kangana.png" alt="">
+                    <h3>Kangana Ranaut</h3>
+                    <p>“Traveling has always been my way of discovering not just new places but also new parts of myself. This travel wishlist platform has been a game-changer for me, helping me plan every trip with precision and passion. It’s not just about listing places to visit—this platform allows me to dive deeper into the essence of each destination, from local cuisines to hidden gems off the beaten path. The ability to share photos, write reviews, and connect with fellow travelers makes it easy to find inspiration and connect with others who share my love for exploration. Whether it’s planning my next adventure or reliving a past trip, this platform is a must for anyone who sees travel as more than just sightseeing. Highly recommended!”</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+
+            </div>
+
+    </div>
+</div>
+</section>
+
+<!-- review section ends -->
+ <!-- contact section starts -->
+  <section class="contact" id="contact">
+    <h1 class="heading">
+        <span>c</span>
+        <span>o</span>
+        <span>n</span>
+        <span>t</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+    </h1>
+    <div class="row">
+        <div class="image">
+            <img src="/images/contact.png" alt="">
+        </div>
+        <form action="">
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+                <input type="email" placeholder="emailid">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="number">
+                <input type="text" placeholder="subject">
+            </div>
+            <textarea placeholder="message" name="" id=""></textarea>
+            <input type="submit" class="btn" value="send message">
+        </form>
+    </div>
+
+  </section>
+  <!-- contact section ends -->
+   <!-- brand section -->
+    <!-- <section class="brand-container">
+        <div class="swiper-container brand-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="/images/image.png" alt=""></div>
+                <div class="swiper-slide"><img src="/travel1unsplash.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/travel2.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/travel3.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/travel4.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="/travel5.jpg" alt=""></div>
+            </div>
+        </div>
+
+
+    </section> -->
+    <!-- footer section -->
+     <section class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>about us</h3>
+
+
+
+                <a href="/about.html">ABOUT VOYAGE VERSE 
+                    <SPAN>(Click to know more)</SPAN></a>
+
+
+
+                
+            </div>
+            <div class="box">
+                <h3>branch locations</h3>
+                <a href="#">india</a>
+                <a href="#">usa</a>
+                <a href="#">japan</a>
+                <a href="#">italy</a>
+                <a href="#">china</a>
+              
+            </div>
+            <div class="box">
+                <h3>quick links</h3>
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">packages</a>
+                <a href="#gallery">gallery</a>
+                <a href="#review">review</a>
+                <a href="#services">services</a>
+                <a href="#contact">contact</a>
+              
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a href="#">facebook</a></i>
+                <a href="#">instagram</a>
+                <a href="#">linkedin</a>
+                <a href="#">X</a>
+
+              
+            </div>
+
+
+
+
+        </div>
+        <h1 class="credit">created by &copy <span> Tanisha Singh 2025</span>|all rights reserved|</h1>
+     </section>
+
+
+
+
+
+
+
+<!-- <script src="/search.js"></script> -->
+<script src="https://unpkg.com/cloudinary-core/cloudinary-core-shrinkwrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="/script.js"></script>
+</body>
+
+</html>

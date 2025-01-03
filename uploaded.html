@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Social Review Platform</title>
+  <link rel="stylesheet" href="/uploaded.css">
+</head>
+<body>
+  <header>
+    <h1>Social Review Page</h1>
+  </header>
+  
+  <main>
+    <p>Our Social Review Page is designed to connect travelers and provide valuable insights for your journey. Share your experiences, rate destinations, accommodations, and activities, and help others make informed decisions. By joining our community, you contribute to a shared knowledge base, making travel planning easier and more enriching for everyone.</p>
+
+    <!-- Search Section -->
+    <section id="search-section">
+      <h2>Search for a Destination</h2>
+      <input type="text" id="searchInput" placeholder="Enter destination to search...">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <!-- Photos Grid Section -->
+    <div id="photosGrid"></div>
+
+    <!-- Submit Review Section -->
+    <section id="review-section">
+      <h2>Submit a Review</h2>
+      <input type="text" id="destinationInput" placeholder="Enter destination name...">
+      <textarea id="reviewText" placeholder="Write your review"></textarea>
+      <!-- Ratings Section -->
+<div class="container">
+  <h2>Rate Your Favorite Destinations</h2>
+  
+  <!-- Thumbs Rating -->
+  <div class="rating-type">
+    <h3>Thumbs Rating</h3>
+    <label for="thumbs-up">
+      <input type="radio" id="thumbs-up" name="thumbs-rating" value="up">
+      &#128077; Thumbs Up
+    </label>
+    <label for="thumbs-down">
+      <input type="radio" id="thumbs-down" name="thumbs-rating" value="down">
+      &#128078; Thumbs Down
+    </label>
+  </div>
+  
+  <!-- Star Rating -->
+  <div class="rating-type">
+    <h3>Star Rating</h3>
+    <label for="star5">
+      <input type="radio" id="star5" name="star-rating" value="5">
+      &#9733; 5 Stars
+    </label>
+    <label for="star4">
+      <input type="radio" id="star4" name="star-rating" value="4">
+      &#9733; 4 Stars
+    </label>
+    <label for="star3">
+      <input type="radio" id="star3" name="star-rating" value="3">
+      &#9733; 3 Stars
+    </label>
+    <label for="star2">
+      <input type="radio" id="star2" name="star-rating" value="2">
+      &#9733; 2 Stars
+    </label>
+    <label for="star1">
+      <input type="radio" id="star1" name="star-rating" value="1">
+      &#9733; 1 Star
+    </label>
+  </div>
+  
+  <!-- Smiley Rating -->
+  <div class="rating-type">
+    <h3>Smiley Rating</h3>
+    <label for="smiley-happy">
+      <input type="radio" id="smiley-happy" name="smiley-rating" value="happy">
+      &#128522; Happy
+    </label>
+    <label for="smiley-neutral">
+      <input type="radio" id="smiley-neutral" name="smiley-rating" value="neutral">
+      &#128528; Neutral
+    </label>
+    <label for="smiley-sad">
+      <input type="radio" id="smiley-sad" name="smiley-rating" value="sad">
+      &#128577; Sad
+    </label>
+  </div>
+</div>
+
+      
+
+      <!-- File Upload -->
+      <input type="file" id="uploadPhoto">
+      <button id="submitReview">Submit Review</button>
+    </section>
+  </main>
+
+  <script type="module" src="/uploaded.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Wishlist</title>
+  <link rel="stylesheet" href="/unplash&cloud.css">
+</head>
+<body>
+
+  <!-- Login Section -->
+  <div id="login-section">
+    <input type="email" id="email" placeholder="Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button id="login-btn">Log In</button>
+    <button id="signup-btn">Sign Up</button>
+  </div>
+
+  <!-- Logout Button -->
+  <button id="logout-btn" style="display: none;">Log Out</button>
+
+  <!-- Search and Wishlist Section -->
+  <div class="wishlist-container">
+    <h1>Travel Wishlist</h1>
+
+    <!-- Search Section -->
+    <div class="search-section">
+      <input type="text" id="destination-input" placeholder="Search for a destination">
+      <button id="search-btn">Search</button>
+    </div>
+
+    <!-- Image Results Section -->
+    <div id="image-results" class="results"></div>
+
+    <!-- Wishlist Section -->
+    <h2>Your Wishlist</h2>
+    <div id="wishlist" class="wishlist"></div>
+  </div>
+  
+
+
+
+  <!-- Include JavaScript -->
+  <script type="module" src="/unplash&cloud.js"></script>
+
+</body>
+</html>
